@@ -45,11 +45,5 @@ $(NODEMON):
 watch: $(NODEMON)
 	$(NODEMON) -w src -e tex,oden -x 'make slides || true'
 
-present: $(SLIDES)
-	pdfpc \
-		--notes=right \
-		--disable-auto-grouping \
-		$(SLIDES)
-
 clean:
 	rm -rf target

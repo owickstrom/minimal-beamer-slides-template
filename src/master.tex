@@ -16,8 +16,11 @@
 
 \usepackage{etoolbox}
 \usepackage{pgfpages}
+
 \setbeamertemplate{note page}[mynotes]
-\setbeameroption{show notes on second screen=right}
+\include{src/includes/notestyle}
+\setbeameroption{show notes on second screen}
+
  % created dynamically by the build
 \include{options}
 
@@ -55,8 +58,6 @@
 \newcommand\Small{\fontsize{5}{5}\selectfont}
 
 \usepackage{listings}
-\include{src/go-language}
-\include{src/oden-language}
 \lstset{
   columns=fixed,
   basewidth=.6em,
