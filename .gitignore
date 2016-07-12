@@ -28,3 +28,5 @@
 *.snm
 *.pdfpc
 *.vrb
+
+!samples/*.pdf
