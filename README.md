@@ -2,7 +2,8 @@
 
 This repository contains a minimal template for LaTeX Beamer talks. I extracted
 this from my talks as I found the styling very nice and focused on the content.
-All of the default navigation mumbo jumbo has been removed.
+All of the default navigation mumbo jumbo has been removed. It uses *Fira Sans*
+and *Fira Code* throughout.
 
 It is configured to produce two PDFs, one with notes and one without. The notes
 are placed on the right of the main content, in a double-width PDF. You can use
