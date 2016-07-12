@@ -42,7 +42,6 @@ The first slide uses `\titlepage`, you can leave that as is.
 ```latex
 \begin{frame}
   \titlepage
-  \note[item]{All right, here we go.}
 \end{frame}
 ```
 
