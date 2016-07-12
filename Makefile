@@ -43,7 +43,7 @@ $(NODEMON):
 
 .PHONY: watch
 watch: $(NODEMON)
-	$(NODEMON) -w src -e tex,oden -x 'make slides || true'
+	$(NODEMON) -w src -e tex,png -x 'make slides || true'
 
 clean:
 	rm -rf target

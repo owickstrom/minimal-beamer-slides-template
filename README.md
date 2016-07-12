@@ -104,6 +104,9 @@ If you have NodeJS you can also run the watched build:
 make watch
 ```
 
+**NOTE:** If you want the watch to react to other file extensions than `.tex`
+and `.png` you need to add those in the Makefile.
+
 ## License
 
 The MIT License (MIT)
