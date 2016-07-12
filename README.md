@@ -62,8 +62,9 @@ There's three custom commands for centered text:
 * `\singlesubheading` for sub-sections
 * `\singletext` for emphasizing a short quote or statement
 
-For including text, the template favors the `listings` package together with an
-adaptation of the [Paramount color scheme](https://wickstrom.tech/programming/2016/05/15/paramount-color-scheme-for-vim.html).
+For including text, the template uses the `listings` package together with an
+adaptation of the [Paramount color
+scheme](https://wickstrom.tech/programming/2016/05/15/paramount-color-scheme-for-vim.html).
 
 ```latex
 \begin{frame}
@@ -78,12 +79,13 @@ adaptation of the [Paramount color scheme](https://wickstrom.tech/programming/20
 ### Dark Theme
 
 If you want a dark theme for your slides, remove the comment in `src/master.tex`
-before the include:
+at the following include:
 
 ```latex
-% Uncomment to enable dark theme:
-%\include{src/includes/dark-theme}
+\include{src/includes/dark-theme}
 ```
+
+You now have a black background with white text.
 
 ## Build
 
