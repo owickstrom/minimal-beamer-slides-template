@@ -1,0 +1,106 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+
+\usepackage{xcolor}
+\definecolor{mediumgray}{HTML}{888888}
+\definecolor{dimgray}{HTML}{BBBBBB}
+\definecolor{brightred}{HTML}{FF5555}
+\definecolor{codehighlightcolor}{HTML}{AF5FD7}
+
+
+%\setbeamercolor*{palette secondary}{use=structure,fg=white,bg=red}
+% \setbeamercolor*{palette tertiary}{use=structure,fg=white,bg=green}
+
+\usepackage{setspace}
+\setstretch{1.5}
+
+\usepackage{etoolbox}
+\usepackage{pgfpages}
+\setbeamertemplate{note page}[mynotes]
+ % created dynamically by the build
+\include{options}
+
+\include{src/includes/notestyle}
+
+% Uncomment to enable dark theme:
+%\include{src/includes/dark-theme}
+
+\usepackage[T1]{fontenc}
+\usepackage[sfdefault,scaled=.85]{FiraSans}
+\usepackage{newtxsf}
+
+\usepackage{FiraMono}
+
+\usepackage{array}
+\usepackage{booktabs}
+
+\beamertemplatenavigationsymbolsempty
+
+\setbeamersize{text margin left=30pt,text margin right=30pt}
+\setbeamercolor{structure}{fg=black}
+\setbeamertemplate{frametitle}{\vspace{20pt}\insertframetitle}
+\setbeamerfont{frametitle}{size=\fontsize{14pt}{14pt},series=\bfseries}
+\setbeamerfont{title}{size=\fontsize{32pt}{32pt},family=\textrm,series=\bfseries}
+\setbeamerfont{subtitle}{size=\fontsize{16pt}{16pt}}
+\setbeamerfont{author}{size=\fontsize{10pt}{10pt}}
+\setbeamerfont{date}{size=\fontsize{10pt}{10pt}}
+\setbeamertemplate{footline}{
+  \hfill
+  \color{mediumgray}{
+    \href{https://twitter.com/\twitterhandle}{@\twitterhandle}}
+  \hspace{0.25cm}
+  \vspace{0.25cm}
+}
+\setbeamertemplate{items}[circle]
+
+\newcommand\Small{\fontsize{5}{5}\selectfont}
+
+\usepackage{listings}
+\include{src/go-language}
+\include{src/oden-language}
+\lstset{
+  columns=fixed,
+  basewidth=.6em,
+  basicstyle=\linespread{1.2}\ttfamily,
+  commentstyle=\color{gray}\textit,
+  keywordstyle=\ttfamily,
+  stringstyle=\color{codehighlightcolor},
+  numberstyle=\color{codehighlightcolor},
+  showstringspaces=false,
+  aboveskip=0pt,
+  belowskip=0pt,
+	mathescape=false,
+	escapechar=\@
+}
+
+\newcommand{\singletitle}[1]{
+  \begin{center}
+    \vfill\vfill
+    \fontsize{20pt}{20pt}\textbf{#1}
+    \vfill\vfill
+  \end{center}}
+
+\newcommand{\singletext}[1]{
+  \begin{center}
+    \vfill\vfill
+    \fontsize{16pt}{16pt}\textit{#1}
+    \vfill\vfill
+  \end{center}}
+
+\newcommand{\singlesubheading}[1]{\singletext{\textbf{#1}}}
+
+\newcommand{\notelist}[1]{
+  \note{
+    \begin{itemize}
+    \setlength\itemsep{2pt}
+    \setstretch{0}#1
+    \end{itemize}
+  }}
+
+\include{src/metadata}
+
+\begin{document}
+
+\include{src/slides}
+
+\end{document}
