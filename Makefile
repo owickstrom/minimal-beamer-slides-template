@@ -1,3 +1,7 @@
+# The MIT License (MIT)
+#
+# Copyright (c) 2016, Oskar Wickström
+
 TEX=pdflatex
 NODEMON=node_modules/.bin/nodemon
 
